@@ -19,7 +19,7 @@ jobs:
       with:
         dotnet-version: 2.2.102
     - name: Restore dependencies
-      run: dotnet restore PartsUnlimited.sln
+      run: dotnet restore src/PartsUnlimitedWebsite/PartsUnlimitedWebsite.csproj
     - name: Build
-      run: dotnet build PartsUnlimited.sln --no-restore
+      run: dotnet build src/PartsUnlimitedWebsite/PartsUnlimitedWebsite.csproj --no-restore
 
