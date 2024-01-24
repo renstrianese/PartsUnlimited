@@ -19,7 +19,7 @@ jobs:
       with:
         dotnet-version: 2.2.102
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet PartsUnlimited.sln restore
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet PartsUnlimited.sln build --no-restore
 
